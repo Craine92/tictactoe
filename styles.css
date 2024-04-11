@@ -1,0 +1,67 @@
+.container {
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    height: 100vmin; 
+}
+
+.tic-tac-toe {
+    text-align: center; 
+}
+
+p {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.tic-tac-toe #gameboard {
+    width: 60vmin;
+    height: 60vmin;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0;
+    /*vmin = kleinerer wert von vw/vh 60% vom Bildschirm wird eingenommen
+    display grid = layout was ermöglicht Elemente in Zeilen & Spalten anzuordnen (TicTacToe Gitter)
+    grid-template-columns: breite der Spalten, repeat(3, 1fr) repeat funktion wiederholt anzahl von Spalten (3), 
+    1fr (Fractional Unit) teilt den verfügbarenplatz in dem Container in geil große Teile auf. (300px Container mit 3 Spalten, mit 1fr wird jede Spalte 100px groß)  
+    gap = abstand zwischen Zellen des Gitters auf 0 (Direkt angrenzend)*/
+}
+
+.tic-tac-toe button {
+    width: 20vmin;
+    height: 20vmin;
+    background: white;
+    border: 1px solid black;
+    margin: 0;
+    font: 0/0 transparent;
+    /* 0/0 setzt die schriftgröße und zeilenhöhe auf 0, transparent verbirgt den Schriftzug der Buttons*/
+}
+
+
+.tic-tac-toe [aria-label="x"] {
+    background-image: url('kreuz.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.tic-tac-toe [aria-label="o"]{
+	background-image: url('kreis.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+
+#refresh {
+    background-color: #000000; 
+    color: white; 
+    padding: 10px 20px; 
+    border-radius: 50px; 
+    cursor: pointer; 
+    display: inline-block; 
+}
+
+
+ body {
+        background: linear-gradient(to bottom right, #00f82a, #00ffbf, #00aeff, #a200ff);
+}
+

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Tac Toe</title>
+    <script language="javascript" type="text/javascript" src="ttt.js"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+ <body>
+                <!--ARIA-Attribut (Acessible Rich Internet Applications, spielstatus des feldes wird markiert, wird ein feld markiert wird die funktion "markField" aufgerufen
+                    die funktion ändert das aria label - attribut des markierten feldes (x oder o) und aktualisiert dann den hinweis für den anderen spieler)-->
+        <div class="container">
+            <div class="tic-tac-toe" aria-describedby="hint">
+                    <p id="hint">Zum spielen abwechselnd in die Spielfelder klicken! </p>
+                    <div id="gameboard">
+                    <!--disabled attribut deaktiviert den Button der bereits geklickt wurde-->
+                        <button>A1</button>
+                        <button>A2</button>
+                        <button>A3</button>
+
+                        <button>B1</button>
+                        <button>B2</button>
+                        <button>B3</button>
+
+                        <button>C1</button>
+                        <button>C2</button>
+                        <button>C3</button>
+                    </div>
+
+                        <div id="refresh"> 
+                            <div onclick="window.location.reload();" style="cursor: pointer;">Neues Spiel</div>
+                        </div>
+                
+
+            </div>
+        </div>
+
+</body>
+</html>
